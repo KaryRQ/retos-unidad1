@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+@media(min-width:1200px) {
+    .medium,
+    .large,
+    .small {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-image: url(../images/sunny.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        align-items: center;
+    }
+    .small,
+    .large {
+        display: none;
+    }
+    .medium {
+        width: 100%;
+        margin-left: 70%;
+        margin-top: 70%;
+        display: block;
+    }
+}
+
+@media(max-width: 800px) {
+    body {
+        background-image: url(../images/night.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        align-items: center;
+    }
+    .large,
+    .medium {
+        display: none;
+    }
+    .small {
+        width: 100%;
+        margin-left:50%;
+        margin-top: 85%;
+        display: block;
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        background-image: url(../images/dawn.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        align-items: center;
+    }
+    .medium,
+    .small {
+        display: none;
+    }
+    .large {
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 51%;
+        display: block;
+    }
+}

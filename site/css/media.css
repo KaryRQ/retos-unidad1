@@ -1,0 +1,19 @@
+ @media (max-width: 768px) {
+   .col-3,
+   .col-4 {
+     display: none;
+   }
+   .col-5 {
+     width: 100%;
+   }
+   .mobile{
+     display: block;
+   }
+   .desktop{
+     display: none;
+   }
+   .list-mobile{
+     display: none;
+   }
+ }
+
